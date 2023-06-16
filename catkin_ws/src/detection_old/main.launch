@@ -1,0 +1,10 @@
+<launch>
+    
+    <node pkg="move_test" type="rotation3.py" name="rotation_launched" output="screen" />
+    <node pkg="move_test" type="track_gimbal.py" name="track_gimbal_launched" output="screen" />
+
+    <node pkg="detection" type="detection_node" name="detection_node" output="screen" />
+    
+    <node pkg="referee_system" type="main" name="referee_system" output="screen" />
+    
+</launch>

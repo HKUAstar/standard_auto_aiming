@@ -1,0 +1,5 @@
+<launch>
+    <!-- include file="$(find roborts_base)/launch/base.launch" -->
+    <include file="$(find hikrobot_camera)/launch/hikrobot_camera.launch" />
+    <node pkg="detection" type="detection_noaiming_node" name="detection_noaiming_node" output="screen" />
+</launch>

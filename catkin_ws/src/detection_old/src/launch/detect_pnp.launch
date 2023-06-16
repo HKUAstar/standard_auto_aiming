@@ -1,0 +1,5 @@
+<launch>
+    <!-- include file="$(find roborts_base)/launch/base.launch" -->
+    <node pkg="detection" type="detection_noaiming_node" name="detection_noaiming_node" output="screen" />
+    <node pkg="detection" type="detection_pnp_node" name="detection_pnp_node" output="screen" />
+</launch>
