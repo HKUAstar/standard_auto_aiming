@@ -1,0 +1,17 @@
+import rospy as ros
+
+import message_filters
+from geometry_msgs.msg import Int32
+
+class RunningLoop:
+    def __init__(self):
+        message_filters.Subscriber('/astar/catkin_ws/judge_start', Int32, Run, queue = 10)
+
+        ros.spin()
+    
+    def Run(self, detection):
+        if(detection == 1):
+            
+
+
+
